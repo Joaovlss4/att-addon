@@ -17,6 +17,11 @@ public class AttAddon extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
+
+        SlimefunItemStack DiamondAlloy = new SlimefunItemStack(material.DIAMOND, "&4A Cool Category");
+        ItemGroup itemGroup = new ItemGroup(categoryId, categoryItem);
+
+
         // Read something from your config.yml
         Config cfg = new Config(this);
 
